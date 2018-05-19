@@ -10,38 +10,32 @@
    </head>
    <body>
       <header>
-         <section>
-            <p class="title">Gabe Scoggin</p>
-            <nav>
-               <ul>
-                  <li><a href="index.html">About</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
-               </ul>
-            </nav>
-         </section>
-      </header>
+          <div class="topnav">
+              <a class="active" href="index.html">Gabe Scoggin</a>
+              <div class="topnav-right">
+                  <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </div>
+        </header>
       <main>
+        <div class="box white">
          <section>
             <h1>Contact</h1>
-            <p>This is the description text</p>
-         </section>
-         <div class="container">
-            <form action="action_page.php">
+            
+         <div> <!--class="container"-->
+            <form class="container" action="action_page.php">
                <label for="name">Name</label>
                <input type="text" id="name" name="firstname" placeholder="John Smith">
                <label for="email">Email</label>
                <input type="text" id="name" email="email" placeholder="example@gmail.com">
-               <!--                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select> -->
                <label for="message">Message</label>
                <textarea id="message" name="message" style="height:200px"></textarea>
                <input type="submit" value="Submit">
             </form>
+          </section>
+          </div>
          </div>
       </main>
       <footer class="blueline">

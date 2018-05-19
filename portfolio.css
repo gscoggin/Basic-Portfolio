@@ -1,32 +1,49 @@
+header {
+    
+    background-color: #ffffff;
+  }
+
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 0px;
     font-family: Arial;
 }
 
 /* Center website */
 .main {
     max-width: 1000px;
-    margin: auto;
+    margin: 0px 0px 0px 150px;
+    width:960px;
+    height: 650px;
+    background:#ffffff
+    /*margin: auto;*/
 }
 
-h1 {
-    font-size: 50px;
-    word-break: break-all;
+.clearfix {
+    overflow: auto;
 }
 
-.row {
+/*.row {
     margin: 8px -16px;
-}
+    width:960px;
+    height: 500px;
+    background:#ffffff;
+}*/
 
 /* Add padding BETWEEN each column (if you want) */
+
+.row {
+    margin: 0px;
+    width:960px;
+}
+
 .row,
 .row > .column {
-    padding: 8px;
+    padding: 5px;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -46,7 +63,18 @@ h1 {
 .content {
     background-color: white;
     padding: 10px;
+    
 }
+
+h3 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
