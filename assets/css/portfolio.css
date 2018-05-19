@@ -1,38 +1,9 @@
-header {
-    
-    background-color: #ffffff;
-  }
 
-* {
-    box-sizing: border-box;
-}
 
-body {
-    background-color: #f1f1f1;
-    padding: 0px;
-    font-family: Arial;
-}
+
 
 /* Center website */
-.main {
-    max-width: 1000px;
-    margin: 0px 0px 0px 150px;
-    width:960px;
-    height: 650px;
-    background:#ffffff
-    /*margin: auto;*/
-}
 
-.clearfix {
-    overflow: auto;
-}
-
-/*.row {
-    margin: 8px -16px;
-    width:960px;
-    height: 500px;
-    background:#ffffff;
-}*/
 
 /* Add padding BETWEEN each column (if you want) */
 
@@ -48,9 +19,16 @@ body {
 
 /* Create four equal columns that floats next to each other */
 .column {
-    float: left;
+    flex: 50%;
     width: 25%;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 
 /* Clear floats after rows */ 
 .row:after {
@@ -66,7 +44,7 @@ body {
     
 }
 
-h3 {
+.text-block {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -88,4 +66,34 @@ h3 {
     .column {
         width: 100%;
     }
+}
+
+.image {
+    width: 50%;
+    margin: 20px 0px 25px 40px;  
+}
+
+.image-label {
+    width: 50%;
+    position: relative;
+}
+
+
+.image-label a {
+    display: block;
+    position: absolute;
+    top: 133px;
+    z-index: 2;
+    text-align: center;
+    width: 50%;
+    font: 125%/200% 'Georgia', Times, Times New Roman, serif;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 0px 0px 40px;
+}
+
+div.gallery {
+    margin: 0px;
+    float: left;
 }
